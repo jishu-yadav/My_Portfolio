@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>jishuyadav | Myportal.com</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      * {
+  box-sizing: border-box;
+}
+    body {
+        font-family: 'Sofia';font-size: 22px;
+    }
+    
+    /* Center website */
+    .main {
+        max-width: 1000px;
+        margin: auto;
+    }
+    
+    h1 {
+      font-size: 50px;
+      word-break: break-all;
+    }
+    
+    .row {
+      margin: 8px -16px;
+    }
+    
+    /* Add padding BETWEEN each column */
+    .row,
+    .row > .column {
+      padding: 8px;
+    }
+    /* Create four equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 25%;
+    }
+    /* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}    
+    
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 36px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 12px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-github{
+  background: black;
+  color: white;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #E1306C;
+  color: white;
+}
+
+    </style>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='' media ="screen and (max-width: 1170px)"href="css/phone.css">
+    <script src='main.js'></script>
+  <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/9566/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="EvergreenGarden.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#Projects-container">Projects</a></li>
+            <li class="item"><a href="#education">Skills</a></li>
+            <li class="item"><a href="#contact">Hire Me </a></li>
+
+        </ul>
+    </nav>
+    <div class="flex-container">
+
+        <div class="flex-child intro">
+          <section id="home">
+             
+            <h1 class="h-primary" style="color:#630000" text-shadow="2px 2px 5px yellow ">Jishu Yadav</h1>
+            
+            <p style="color:black;  font-family :'Berkshire Swash', cursive;">I believe that the best way to predict the future is to create it.</p>
+            <p class="pm" style="color:#630000 ;font-family: 'Berkshire Swash', cursive" >❝Design is not a philosophy it's life...❞</p>
+            <button class="btn" text-color="black" ><a href="#Projects-container">🡻</a></button>
+
+            
+
+          </section>
+        </div>
+        
+        <div class="flex-child portrait">
+            <div class="portray">
+                <img src="img/my_image.jpeg" width="300" height="400" 
+               >
+            </div>
+                <h2><span class="text_1" >I am a passionate <br>Web Designer, </span><span class="text_2">I am an active learner.</span></h2>
+            
+           
+        </div>
+        
+      </div>
+    
+   
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+
+    <h2 style="color: #810034"> The time to build a network is always before you need one.⮯</h2>
+    <hr>
+   
+    <a href="https://www.linkedin.com/in/jishu-yadav-642ba01a0/" class="fa fa-linkedin"></a>
+    <a href="https://github.com/jishu-yadav" class="fa fa-github"></a>
+    <a href="https://twitter.com/JishuYadav7" class="fa fa-twitter"></a>
+    <a href="https://www.facebook.com/jishu.yadav.503" class="fa fa-facebook"></a>
+    <a href="https://www.instagram.com/jishu180/" class="fa fa-instagram"></a>
+    <a href="https://docs.google.com/document/d/1_j0AHT71DzLwbLmmzcM94ZvxPxx3wXx910J9QWrAU-U/edit?usp=sharing">My Resume</a>
+    <h1 class="h-primary center" style="background: url('img/ry.png') no-repeat center center/cover">My Projects<a href="#Projects-container">⮯</a></h1>
+    <hr>
+    <section id="Projects-container" style="background: url('img/ry.png') no-repeat center center/cover">
+        
+        <div id="Projects"> 
+             <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="img/garden.jpeg"  style="width:100%">
+          <h3>Garden Web</h3>
+          <p>This is a fully responsive website I built for a garden-nursery business purpose. </p>
+          <a href="https://jishu-yadav.github.io/gardenWeb/index.html">Project Link</a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="img/bot.jpeg"  style="width:100%">
+          <h3>Discord-Bot</h3>
+          <p>I made a Discord Bot which is entractive and is able to do sum calculations :)</p>
+          <a href="https://github.com/jishu-yadav/discord-bot">Project Link</a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="img/sudoku.jpeg"  style="width:100%">
+          <h3>Sudoku</h3>
+          <p>In this project I had used my data structures and algoriths skills and implement this using backtracking.</p>
+          <a href="https://github.com/jishu-yadav/sudoku/blob/main/suduko.cpp">Project Link</a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="img/extension.jpeg" style="width:100%">
+          <h3>MyChromeExtension</h3>
+          <p>To ease my daily tasks, I had made a chrome extension for myself having all my social media handles there....
+            I made this website to help one startup.
+          </p> <a href="https://jishu-yadav.github.io/extension/popup.html">Project Link</a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="img/fish.jpeg"  style="width:100%">
+          <h3>My Acquarium</h3>
+          <p>I had used some html and intermediate css to make this acquarium.</p>
+          <a href="https://codepen.io/jishu29/full/WNGygqz">Project Link</a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="img/w4u.jpeg"  style="width:100%">
+          <h3>Web For You</h3>
+          <p>Made a website for web community to learn and guide others.</p>
+          <a href="https://web-designer-iustus.github.io/Web-dev/web.html">Project Link</a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="img/natures.jpeg"  style="width:100%">
+          <h3>Natural Disasters</h3>
+          <p>Collected all types of natural disasters link and organised them in my website here in this form.</p>
+          <a href="https://jishu-yadav.github.io/nature/natural_disaster.html">Project Link</a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="img/gportal.jpeg"  style="width:100%">
+          <h3>My portfolio</h3>
+          <p>Made this portfolio for myself to connect with others and excell in future endeavours.</p>
+          <a href="">Project Link</a>
+        </div>
+      </div>
+    <!-- END GRID -->
+    </div>
+    
+    <!-- END MAIN -->
+    </div>
+
+        </div>
+    </section>
+
+    <div class="float-container">
+
+      <div class="float-child skills">
+           <!-- this is an skills section and all styling copied from education section.....-->
+     <section class="page-section" id="education">
+      <div class="container">
+          <div class="text-center">
+              <h2 class="section-heading text-uppercase" style="background: url('img/ry.png') no-repeat center center/cover">Skills and certifications:</h2>
+              <h3 class="section-subheading text-muted">....................................................................................................................</h3>
+          </div>
+          <div class="text-center" style="background-color: rgb(230, 243, 221 ,0.5)">
+            <p class="text-muted" >
+            <ul>
+                <li>➥c / c++ , JAVA , Python </li>
+                <li>➥<a href="https://www.coursera.org/api/certificate.v1/pdf/PUH9KLGJ5WR4">Web Designing( Responsive )</a></li>
+                <li>➥<a href="https://d2w8fsc1wkigu3.cloudfront.net/1392338/9d007782e9f4b6f08f7f8f3f58effc48/certificates/courses/eada081e97f5d70d2e381eb4124ce416course_certificate_ed6aed0bqdupzi.pdf">Git</a>, <a href="https://d2w8fsc1wkigu3.cloudfront.net/1392338/9d007782e9f4b6f08f7f8f3f58effc48/certificates/courses/82a415e74fc6a37bb40796c2541d745ecourse_certificate_e0a7a893qdupzi.pdf">Command Line</a></li>
+                <li>➥SQL / MySQL / Database Management, Operating Systems</li>
+                <li>➥<a href="https://www.coursera.org/api/certificate.v1/pdf/G6XMHR6WCLNN">HTML</a>, <a href="https://www.coursera.org/api/certificate.v1/pdf/CMHTERG3B6Q2">CSS</a>, <a href="https://www.coursera.org/api/certificate.v1/pdf/SNQQYJTSPGGB">JS</a></li>
+            </ul>
+            </p>
+        </div>
+      </div>
+  </section>
+
+
+      </div>
+      
+      <div class="float-child education">
+         <!-- Education-->
+     <section class="page-section" id="education">
+      <div class="container">
+          <div class="text-center">
+              <h2 class="section-heading text-uppercase" style="background: url('img/ry.png') no-repeat center center/cover">Education & Experiences</h2>
+              <h3 class="section-subheading text-muted">....................................................................................................................</h3>
+          </div>
+          <ul class="timeline">
+              <li>
+                  <div class="timeline-image"><a href="http://iiitg.ac.in/"><img class="rounded-circle img-fluid" src="assets/img/about/IIITG_Logo.jpg"
+                          alt="" /></a> </div>
+                  <div class="text-center">
+                      <div class="text-center"style="background-color: rgb(230, 243, 221 ,0.5)">
+                          <h4>➹2019-2023</h4>
+                          <h4 class="subheading" style="color:#c64756 ">UNDERGRADUATE DEGREE -<br>Indian Institue of Information Technology  <br>Guwahati, India
+                          </h4>
+                      </div>
+                      <div class="text-center" style="background-color: rgb(230, 243, 221 ,0.5)">
+                          <p class="text-muted" >
+                          <ul>
+                              <li>➥B. TECH in Computer Science (CSE).</li>
+                              <li>➥Head Coordinater of Programming Club( Avant)</li>
+                              <li>➥Virtual Intern at Microsoft</li>
+                              <li>➥Core Member of Social and welfare Board Club (Prayatn)
+                              </li>
+                              
+                          </ul>
+                          </p>
+                      </div>
+                  </div>
+              </li>
+              <li class="text-center">
+                  <div class="timeline-image"><a href="https://www.ryaninternational.org/"><img class="rounded-circle img-fluid" src="assets/img/about/7.jpg"
+                          alt="" /></a></div>
+                  <div class="text-center">
+                      <div class="text-center"style="background-color: rgb(230, 243, 221 ,0.5)">
+                          <h4>➹2018</h4>
+                          <h4 class="subheading"style="color:#c64756">INTERMEDIATE - <br> Ryan International School, <br>Raebareli, India
+                          </h4>
+                      </div>
+                      <div class="timeline-center"style="background-color: rgb(230, 243, 221 ,0.5)">
+                          <p class="text-muted">
+                          <ul>
+                              <li>➥ISC Board.</li>
+                              <li>➥PCM with ComputerScience</li>
+                          </ul>
+                          </p>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="timeline-image"><a href="https://www.ryaninternational.org/"><img class="rounded-circle img-fluid" src="assets/img/about/7.jpg"
+                          alt="" /></a></div>
+                  <div class="timeline-panel">
+                      <div class="text-center"style="background-color: rgb(230, 243, 221 ,0.5)">
+                          <h4>➹2016</h4>
+                          <h4 class="subheading">High School- <br> Ryan International School, <br>Raebareli, India
+                          </h4>
+                      </div>
+                      <div class="text-center"style="background-color: rgb(230, 243, 221 ,0.5)">
+                          <p class="text-center">
+                          <ul>
+                              <li>➥ICSE Board.</li>
+                          </ul>
+                          </p>
+                      </div>
+                  </div>
+              </li>
+              <li class="timeline-inverted">
+                  <div class="timeline-image">
+                      <h4 >
+                          <a href="mailto:jishuyadavcute88@gmail.com?subject=Wish%20to%20be%20part%20of%20your%20journey%20Jishu"
+                              style="color:#007580">Be the part<br />of My<br />Journey!</a>
+                      </h4>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </section>
+
+      </div>
+      
+    </div>
+  
+
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Me!</h1>
+        <div id="contact-box">
+            <form id="myForm">
+                <label>*Name:</label>
+		        <input name="Name:" />
+		        <br/>
+		        <label>*Email:</label>
+		        <input name="Email:" />
+		        <br/>
+		        <label>Phone Number:</label>
+		        <input name="Phone Number:" />
+		        <br/>
+		        <label>*Message:</label>
+		        <input name="Message:" />
+		        <br/>
+                </form>
+            <button onclick='SubForm()' style="font-style:italic;cursor: pointer; font-style:italic;border-radius: 10px;border-color: green;background-color: greenyellow;padding: 125px 10px;margin: 20px;"><b>Submit</b></button>
+        </div>
+        
+    </section>
+    
+</body>
+</html>
